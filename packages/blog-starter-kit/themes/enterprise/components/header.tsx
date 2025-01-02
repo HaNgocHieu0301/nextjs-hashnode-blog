@@ -18,7 +18,7 @@ export const Header = () => {
 	const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '/';
 	const [isSidebarVisible, setIsSidebarVisible] = useState<boolean>();
 	const { publication } = useAppContext();
-	const navbarItems = publication.preferences.navbarItems.filter(hasUrl);
+	const navbarItems = [{ label: 'Home', url: baseUrl }];
 	const visibleItems = navbarItems.slice(0, 3);
 	const hiddenItems = navbarItems.slice(3);
 
