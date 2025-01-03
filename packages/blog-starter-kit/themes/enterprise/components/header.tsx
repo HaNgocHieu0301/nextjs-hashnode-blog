@@ -7,6 +7,7 @@ import { useAppContext } from './contexts/appContext';
 import HamburgerSVG from './icons/svgs/HamburgerSVG';
 import { PublicationLogo } from './publication-logo';
 import PublicationSidebar from './sidebar';
+import ThemeSwitch from './theme-switcher';
 
 function hasUrl(
 	navbarItem: PublicationNavbarItem,
