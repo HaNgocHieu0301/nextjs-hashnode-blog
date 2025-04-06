@@ -1,6 +1,6 @@
+import { useTranslation } from 'next-i18next';
 import { PostFragment } from '../generated/graphql';
 import { PostPreview } from './post-preview';
-import { useTranslation } from 'next-i18next';
 
 type Props = {
 	posts: PostFragment[];
@@ -14,7 +14,7 @@ export const MorePosts = ({ posts, context }: Props) => {
 		<section className="mb-10 flex flex-col items-start gap-10">
 			{context === 'home' && (
 				<h2 className="text-xl font-bold leading-tight tracking-tight text-slate-900 dark:text-neutral-50 lg:text-3xl">
-					{t('blog.more_posts')}
+					{t('more_posts')}
 				</h2>
 			)}
 			<div className="grid items-start gap-5 md:grid-cols-2 xl:grid-cols-3">
