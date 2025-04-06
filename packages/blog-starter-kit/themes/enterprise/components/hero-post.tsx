@@ -19,7 +19,7 @@ export const HeroPost = ({ title, coverImage, date, excerpt, slug }: Props) => {
 
 	return (
 		<section className="grid h-full grid-cols-1 items-stretch gap-5 lg:grid-cols-2">
-			<div className="col-span-1">
+			<div className="col-span-1 h-full pt-0 lg:pt-12">
 				<CoverImage
 					title={title}
 					src={resizeImage(coverImage, { w: 1000, h: 700, c: 'thumb' }, DEFAULT_COVER)}
